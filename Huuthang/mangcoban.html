@@ -1,0 +1,53 @@
+
+    <!---------------------------------------- map array---------------------------------
+Cú pháp: Cú pháp chung của hàm map()
+array.map(function(item){
+    // item chính là phần tử đang lặp
+    return item; // giá trị trả về sẽ thay thế cho giá trị ban đầu của phần tử
+}); -->
+
+<!-- Cách 1: Giải bằng hàm map như sau:
+var numbers = [1, 2, 3, 4, 5];
+var new_number = numbers.map(function(item){
+    return item * 2; // nhân đôi giá trị
+});
+console.log(new_number);
+// Kết quả: [2, 4, 6,8,10]
+Như bạn thấy, mảng new_number có giá trị mới gấp đôi với giá trị của mảng cũ.
+Cách 2: Sử dụng vòng lặp for
+Sau đây là giải bằng cách sử dụng vòng lặp, và mình sẽ sử dụng vòng lặp for.
+var numbers = [1, 2, 3, 4, 5];
+for (var i = 0; i < numbers.lenght; i++){
+    numbers[i] = numbers[i] * 2;
+}
+ 
+console.log(numbers);
+// Kết quả: [2, 4, 6, 8,10] -->
+<!-- ---------------------------------------------------forEach() -->
+
+<!-- Cú pháp của phương thức forEach() như sau:
+array.forEach(function(currentValue, index, array) {
+}, thisArg);
+Trong đó:
+array: Mảng cần lặp qua.
+currentValue: Giá trị của phần tử hiện tại đang được lặp qua.
+index: Chỉ số của phần tử hiện tại đang được lặp qua.
+array: Mảng đang được lặp qua.
+thisArg (không bắt buộc): Đối tượng được sử dụng như this trong hàm callback.
+Phương thức forEach() sẽ thực thi hàm callback trên từng phần tử trong mảng một cách tuần tự, 
+không trả về bất kỳ giá trị nào. Hàm callback có thể là một hàm được định nghĩa trước hoặc một hàm vô danh (anonymous function). -->
+
+
+-----------------------find-----------------
+
+
+
+<!-- Cú pháp hàm find như sau:
+1
+array.find(function(currentValue, index, arr),thisValue)
+Trong đó:
+currentValue - giá trị của phần tử hiện tại.
+index - chỉ số của phần tử hiện tại.
+arr - mảng mà phần tử hiện tại thuộc về.
+thisValue - tham số không bắt buộc. Nếu được truyền vào thì thisValue sẽ được sử dụng làm giá trị "this:.
+             Nếu không được truyền vào thì giá trị "this" là "undefined". -->
