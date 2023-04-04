@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 8</title>
+</head>
+
+<body>
+    <script>
+        let x = [1, 7, 14, -8, -5, 10, 21];
+        function countPositiveMode7(numbers) {
+            let count = 0;
+            for (let i = 0; i < numbers.length; i++) {
+                if (numbers[i] % 7 == 0 && numbers[i] > 0) {
+                    count++;
+                }
+            }
+            return count;
+        }
+        document.write(`${countPositiveMode7(x)}`);
+    </script>
+
+</body>
+
+</html>
