@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = [1, 4, 7, 9,]
+function returnElement(numbers, a) {
+    let result = a.indexOf(numbers)
+    return console.log(`Vi tri cua ${numbers} la ${result}`);
+}
+function checkExist(numbers, a) {
+    let check = 0
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] == numbers) {
+            check += 1;
+        }
+    }
+    if (check == 1) {
+        return console.log(`so nam trong mang`);
+    } else {
+        return console.log(`so khong nam trong mang`);
+    }
+}
+checkExist(1,a)
+    </script>
+    
+</body>
+</html>
